@@ -1,5 +1,3 @@
-# GRAPHQL-TEST-ORDERCHATROOM-delivery-and-user-
-
 Clone the project on your Local.
 Install node packages using "npm i / npm install".
 Configure the Local MognoDb/ hosted Mongo DB in index js.

@@ -1,2 +1,1 @@
-# ignore all logs
-node_modules
+/node_modules

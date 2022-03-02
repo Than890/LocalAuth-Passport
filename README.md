@@ -1,52 +1,20 @@
-Clone the project on your Local.
-Install node packages using "npm i / npm install".
-Configure the Local MognoDb/ hosted Mongo DB in index js.
-Run the app using "npm start".
-Excute the GraphQL playground on "http://localhost:4000/".
+# Local Authentication with Passport and Mongo
 
-// createChatRoom (see in (resolver/mutation))
+How to implement local authentication using Passport, Node.js, Express, and MongoDB.
 
-mutation{
-  createChatRoom(newUser:{
-    orderid:"1"
-    userid:"2"
-    deliveryid:"2"
-    message:"jadsklfjk"
-  }){
-    orderid
-    userid
-    deliveryid
-    message
-  }
-}
+## Requirements
 
-// chatList (see in (resolver/query))
+* [Node.js](http://nodejs.org/)
+* [MongoDB](https://www.mongodb.org/)
 
-query{
-  chatList(orderid:"1"){
-    _id
-    orderid
-    deliveryid
-    message
-  }
-}
+## Installation Steps
 
-//deleteChatRoom(see in (resolver/mutation))
+1. Clone repo
+2. Run `npm install`
+3. Using Mongo CLI, create a database named *testDb*.
+4. Run the app with: `node index.js`
+5. Comment out the code to create the users in `index.js`
+5. Navigate to localhost:3000.
+6. First sign up first and login.
 
-mutation{
-  deleteChatRoom(orderid:"1"){
-    response
-  }
-}
-
-//subscription (see in (resolver/subscription))
-
-subscription{
-  chatroom{
-    _id
-    orderid
-    deliveryid
-    userid
-    message
-  }
-}
+Ref Tutorial URL: https://www.sitepoint.com/local-authentication-using-passport-node-js/

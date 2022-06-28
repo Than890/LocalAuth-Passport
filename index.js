@@ -38,7 +38,7 @@ passport.use(UserDetails.createStrategy());
 passport.serializeUser(UserDetails.serializeUser());
 passport.deserializeUser(UserDetails.deserializeUser());
 
-/* ROUTES */
+/* ROUTE */
 
 const connectEnsureLogin = require('connect-ensure-login');
 
